@@ -89,6 +89,7 @@ public class QuickSortDemo{
 
     public static void main(String args[]) {
     	    	
+    	// 1st method, sorting an array using the quicksort method
     	Random randomGenerator = new Random(12345);   // constant seed to the generator
     	
     	int[] arrayNumbers = new int[50];
@@ -105,12 +106,27 @@ public class QuickSortDemo{
 
         // sorted array
         System.out.println("Sorted array :" + Arrays.toString(arrayNumbers));
-        
-        
+                
         // example:
         // Initial array :[251, 80, 241, 828, 55, 84, 375, 802, 501, 389, 517, 942, 390, 806, 12, 384, 787, 303, 532, 175, 801, 351, 792, 316, 428, 781, 425, 943, 871, 439, 729, 397, 501, 825, 903, 555, 952, 831, 10, 108, 396, 582, 99, 758, 318, 580, 412, 691, 350, 728]
      	// Sorted array :[10, 12, 55, 80, 84, 99, 108, 175, 241, 251, 303, 316, 318, 350, 351, 375, 384, 389, 390, 396, 397, 412, 425, 428, 439, 501, 501, 517, 532, 555, 580, 582, 691, 728, 729, 758, 781, 787, 792, 801, 802, 806, 825, 828, 831, 871, 903, 942, 943, 952]
 
-
+        
+        // 2nd method to sort using the Arrays.sort method
+        int[] arrayNumbers2 = {1, 5, 6, 7, 24, 0, 23, 2, 3, 2};
+        System.out.println("Initial array :" + Arrays.toString(arrayNumbers2));
+        Arrays.sort(arrayNumbers2);
+        System.out.println("Sorted :" + Arrays.toString(arrayNumbers2));
+        
+        int k = Arrays.binarySearch(arrayNumbers2, 0, arrayNumbers2.length, 23);
+        System.out.println("Find 23: " + k);
+        k = Arrays.binarySearch(arrayNumbers2, 0, arrayNumbers2.length, 55);
+        System.out.println("Find 55: " + k);
+        
+        // Initial array :[1, 5, 6, 7, 24, 0, 23, 2, 3, 2]
+        // Sorted :[0, 1, 2, 2, 3, 5, 6, 7, 23, 24]
+        // Find 23: 8
+        // Find 55: -11
+        
     }
 }
