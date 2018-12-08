@@ -1,7 +1,7 @@
 /**
- * T-University
+ * package with examples used in the T-University
  */
-package collectionsProject;
+package com.tsystems.tu.collectionsProject;
 
 /**
  * Main class

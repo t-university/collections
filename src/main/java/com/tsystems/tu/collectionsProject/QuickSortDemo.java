@@ -1,7 +1,7 @@
 /**
  * package with examples used in the T-University
  */
-package collectionsProject;
+package com.tsystems.tu.collectionsProject;
 
 import java.util.Arrays;
 import java.util.Random;
